@@ -213,3 +213,12 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+java solutions/ProjectEuler/build.xml
+java solutions/ProjectEuler/manifest.mf
+java solutions/ProjectEuler/nbproject/build-impl.xml
+java solutions/ProjectEuler/nbproject/genfiles.properties
+java solutions/ProjectEuler/nbproject/private/private.properties
+java solutions/ProjectEuler/nbproject/private/private.xml
+java solutions/ProjectEuler/nbproject/project.properties
+java solutions/ProjectEuler/nbproject/project.xml
+java solutions/ProjectEuler/src/euler/solutions/Launch.java

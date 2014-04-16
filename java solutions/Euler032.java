@@ -12,7 +12,6 @@ public class Euler032 {
         int sum = 0;
         int product;
         String s;
-        String numbers = "123456789";
         ArrayList<Integer> products = new ArrayList();
         
         for (int i = 2; i < 99; i++) {

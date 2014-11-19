@@ -1,6 +1,7 @@
 package euler.solutions;
 
 import euler.Euler;
+import euler.EulerFunction;
 import java.util.ArrayList;
 
 /**
@@ -15,7 +16,7 @@ public class Euler035 implements Euler {
         int count = 13;
         
         for (int i = 101; i < 1000000; i++) {
-            if (isPrime(i)) {
+            if (EulerFunction.isPrime(i)) {
                 primes.add(i);
             }
         }
@@ -41,23 +42,6 @@ public class Euler035 implements Euler {
             primes.remove(0);
         }
         
-        return "" + count;
-    }
-    
-    public static boolean isPrime(long n) {
-        if (n < 2) {
-            return false;
-        }
-        if (n % 2 == 0) // n is an even, so return true iff n is exactly 2
-        {
-            return (n == 2);
-        }
-        for (int i = 3; i * i <= n; i += 2) {
-            if (n % i == 0) // i divides evenly into n, so n is not prime
-            {
-                return false;
-            }
-        }
-        return true;
+        return String.valueOf(count);
     }
 }

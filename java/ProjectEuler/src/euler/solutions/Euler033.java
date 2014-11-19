@@ -1,6 +1,7 @@
 package euler.solutions;
 
 import euler.Euler;
+import euler.EulerFunction;
 
 /**
  *
@@ -31,20 +32,8 @@ public class Euler033 implements Euler {
         if (found != 4) {
             return "Error, decimal compare failed";
         }
-        ans = lowestFormDenom(totalNumer, totalDenom);
+        ans = EulerFunction.lowestFormDenom(totalNumer, totalDenom);
 
         return "" + ans;
-    }
-
-    private int lowestFormDenom(int numer, int denom) {
-
-        for (int i = numer; i > 1; i--) {
-            if (numer % i == 0 && denom % i == 0) {
-                denom /= i;
-                break;
-            }
-
-        }
-        return denom;
     }
 }

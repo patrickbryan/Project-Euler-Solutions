@@ -20,21 +20,18 @@ public class Euler034 implements Euler {
         }
 
         for (int i = 10; i < 100000000; i++) {
-            if (isDigitFactorial(String.valueOf(i))) {
+            int factorialSum = 0;
+            String num = String.valueOf(i);
+        
+            for (int k = 0; k < num.length(); k++) {
+                    factorialSum += factorials[num.charAt(k) - 48];
+            }
+
+            if (factorialSum == i) {
                 sum += i;
             }
         }
 
-        return "" + sum;
-    }
-
-    private boolean isDigitFactorial(String num) {
-        int sum = 0;
-        
-        for (int i = 0; i < num.length(); i++) {
-            sum += factorials[num.charAt(i) - 48];
-        }
-        
-        return sum == Integer.parseInt(num);
+        return String.valueOf(sum);
     }
 }

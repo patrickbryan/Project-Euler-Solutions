@@ -226,4 +226,3 @@ pip-log.txt
 *.properties
 java/ProjectEuler/src/euler/unfinished/
 java/ProjectEuler/src/launch/
-java/ProjectEuler/src/euler/Euler.java

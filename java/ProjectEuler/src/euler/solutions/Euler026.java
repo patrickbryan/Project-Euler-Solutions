@@ -1,6 +1,7 @@
 package euler.solutions;
 
 import euler.Euler;
+import euler.EulerFunction;
 
 /**
  *
@@ -14,32 +15,12 @@ public class Euler026 implements Euler {
         int denom = 0;
         
         for (int i = 999; i > 1; i--) {
-            if (decimalPeriod(i) > maxPeriod) {
-                maxPeriod = decimalPeriod(i);
+            if (EulerFunction.decimalPeriod(i, 1) > maxPeriod) {
+                maxPeriod = EulerFunction.decimalPeriod(i, 1);
                 denom = i;
             }
         }
         
         return String.valueOf(denom);
-    }
-    
-    private int decimalPeriod(int n) {
-        boolean[] remaindersHit = new boolean[n];
-        int[] remaindersPos = new int[n];
-        int numerator = 1;
-        
-        for (int i = 0; i < n; i ++) {
-            numerator = numerator%n;
-            if (numerator == 0) {
-                break;
-            } else if (remaindersHit[numerator] == true) {
-                return i - remaindersPos[numerator];
-            }
-            remaindersHit[numerator] = true;
-            remaindersPos[numerator] = i;
-            numerator *= 10;
-        }
-        
-        return 0;
     }
 }

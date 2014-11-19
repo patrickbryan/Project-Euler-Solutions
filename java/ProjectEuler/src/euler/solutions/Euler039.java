@@ -9,12 +9,6 @@ import static java.lang.Math.sqrt;
  */
 public class Euler039 implements Euler {
 
-    /**
-     * Dumb solution that tries every single combination.
-     * Could be refined to make only "smart" choices for a and b so
-     * to reduce the checking in the if
-     * @return 
-     */
     @Override
     public String solution() {
         int maxSolutions = 0;

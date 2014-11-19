@@ -1,6 +1,7 @@
 package euler.solutions;
 
 import euler.Euler;
+import euler.EulerFunction;
 
 /**
  *
@@ -16,7 +17,7 @@ public class Euler024 implements Euler {
 
         for (int i = 10; i >= 1; i--) {
             count = 0;
-            temp = factorial(i) / i;
+            temp = EulerFunction.factorial(i) / i;
             while (cur + temp < max) {
                 cur += temp;
                 count++;
@@ -27,13 +28,5 @@ public class Euler024 implements Euler {
         }
 
         return result;
-    }
-
-    private int factorial(int n) {
-        int val = 1;
-        for (int i = 2; i <= n; i++) {
-            val *= i;
-        }
-        return val;
     }
 }

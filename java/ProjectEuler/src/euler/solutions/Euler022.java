@@ -1,6 +1,7 @@
 package euler.solutions;
 
 import euler.Euler;
+import euler.EulerFunction;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -40,7 +41,7 @@ public class Euler022 implements Euler {
             });
             
             for (int i = 0; i < names.size(); i++) {
-                sum += (i + 1) * nameSum(names.get(i));
+                sum += (i + 1) * EulerFunction.stringSum(names.get(i));
             }
 
         } catch (FileNotFoundException ex) {
@@ -48,15 +49,5 @@ public class Euler022 implements Euler {
         }
 
         return String.valueOf(sum);
-    }
-    
-    public int nameSum(String name) {
-        int sum = 0;
-        
-        for (int i = 0; i < name.length(); i++) {
-            sum += (int)name.charAt(i) - 64;
-        }
-        
-        return sum;
     }
 }

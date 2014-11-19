@@ -1,6 +1,7 @@
 package euler.solutions;
 
 import euler.Euler;
+import euler.EulerFunction;
 import java.util.ArrayList;
 
 /**
@@ -18,7 +19,7 @@ public class Euler023 implements Euler {
         boolean[] abundantSums = new boolean[UPPER_LIMIT];
 
         for (int i = 12; i <= UPPER_LIMIT; i++) {
-            if (sumFactors(i) > i) {
+            if (EulerFunction.sumFactors(i) > i) {
                 abundantNum.add(i);
             }
         }
@@ -38,18 +39,5 @@ public class Euler023 implements Euler {
         return String.valueOf(sum);
     }
 
-    private int sumFactors(int n) {
-        int sum = 1, cond = (int) Math.floor(Math.sqrt(n));
-
-        for (int i = 2; i <= cond; i++) {
-            if (n % i == 0) {
-                sum +=  i;
-                if (i != n/i) {
-                    sum += n/i;
-                }
-            }
-        }
-
-        return sum;
-    }
+    
 }

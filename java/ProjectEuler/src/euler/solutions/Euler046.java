@@ -1,12 +1,15 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.util.ArrayList;
 
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler046 {
+public class Euler046 implements Euler {
+    
+    @Override
     public String solution() {
         ArrayList<Integer> primes = new ArrayList<>();
         int smallest = 0;

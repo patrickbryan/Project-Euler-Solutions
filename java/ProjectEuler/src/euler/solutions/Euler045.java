@@ -1,10 +1,14 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler045 {
+public class Euler045 implements Euler {
+    
+    @Override
     public String solution() {
         long t, p = 40755, h = 40755, value = -1;
         long a = 165, b = 143;

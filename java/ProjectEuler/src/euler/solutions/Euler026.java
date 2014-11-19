@@ -1,10 +1,14 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler026 {
+public class Euler026 implements Euler {
+    
+    @Override
     public String solution() {
         int maxPeriod = 0;
         int denom = 0;

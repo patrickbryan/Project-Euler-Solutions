@@ -1,5 +1,6 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -8,13 +9,20 @@ import java.util.Scanner;
  *
  * @author Patrick Bryan
  */
-public class Euler067 {
+public class Euler067 implements Euler {
     
     final int TREE_DEPTH = 100;
     
-    public String solution() throws FileNotFoundException {
-        File treeFile = new File("tree67.txt");
-        Scanner sc = new Scanner(treeFile);
+    @Override
+    public String solution() {
+        Scanner sc;
+        
+        try {
+            File treeFile = new File("tree67.txt");
+            sc = new Scanner(treeFile);
+        } catch(FileNotFoundException e) {
+            return "File not found";
+        }
         int[][] bTree = new int[TREE_DEPTH][];
         int curDepth = 0;
 

@@ -1,13 +1,15 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.math.BigInteger;
 
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler025 {
+public class Euler025 implements Euler {
     
+    @Override
     public String solution() {
         return String.valueOf(fibRec1000Digit(BigInteger.ONE,BigInteger.ONE,2));
     }

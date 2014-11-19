@@ -1,12 +1,13 @@
 package euler.solutions;
 
+import euler.Euler;
 import static java.lang.Math.sqrt;
 
 /**
  *
  * @author Patrick
  */
-public class Euler039 {
+public class Euler039 implements Euler {
 
     /**
      * Dumb solution that tries every single combination.
@@ -14,6 +15,7 @@ public class Euler039 {
      * to reduce the checking in the if
      * @return 
      */
+    @Override
     public String solution() {
         int maxSolutions = 0;
         int maximizedP = 0;

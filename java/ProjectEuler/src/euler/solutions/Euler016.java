@@ -1,13 +1,15 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.math.BigInteger;
 
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler016 {
+public class Euler016 implements Euler {
     
+    @Override
     public String solution() {
         BigInteger val = new BigInteger("1");
         BigInteger biTwo = new BigInteger("2");

@@ -1,5 +1,6 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
@@ -11,8 +12,9 @@ import java.util.Scanner;
  *
  * @author Patrick Bryan
  */
-public class Euler022 {
+public class Euler022 implements Euler {
 
+    @Override
     public String solution() {
         int sum = 0;
         File input = new File("names.txt");

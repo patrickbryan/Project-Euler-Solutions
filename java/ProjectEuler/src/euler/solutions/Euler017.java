@@ -1,11 +1,14 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler017 {
+public class Euler017 implements Euler {
 
+    @Override
     public String solution() {
         int[] oneToNineteen = {3, 3, 5, 4, 4, 3, 5, 5, 4, 3, 6, 6, 8, 8, 7, 7, 9, 8, 8};
         int[] twentyToNinty = {6, 6, 5, 5, 5, 7, 6, 6};

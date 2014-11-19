@@ -1,10 +1,14 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler027 {
+public class Euler027 implements Euler {
+    
+    @Override
     public String solution() {
         boolean valid = false;
         int product = 0, n, max = 0;

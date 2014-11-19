@@ -1,13 +1,16 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler021 {
+public class Euler021 implements Euler {
     
     final int TOP_LIMIT = 10000;
     
+    @Override
     public String solution() {
         int sum = 0, d;
         

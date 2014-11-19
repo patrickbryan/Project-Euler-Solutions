@@ -1,17 +1,17 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler023 {
+public class Euler023 implements Euler {
 
     final int UPPER_LIMIT = 28123;
 
+    @Override
     public String solution() {
         int sum = 0, count = 0;
         ArrayList<Integer> abundantNum = new ArrayList();

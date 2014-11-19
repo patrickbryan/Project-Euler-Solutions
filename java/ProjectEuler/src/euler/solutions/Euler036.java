@@ -1,11 +1,15 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler036 {
-    public String solution() throws Exception {
+public class Euler036 implements Euler {
+    
+    @Override
+    public String solution(){
         int million = 1000000;
         int sum = 0;
         

@@ -218,47 +218,12 @@ pip-log.txt
 ## Netbeans
 #############
 
-/java solutions/ProjectEuler/src/euler/unfinished/
-/java solutions/Hiragana_Trainer/nbproject/private/
-/java solutions/Google Code Jam 2014/nbproject/private/
-/java solutions/Munchkin Online/nbproject/private/
-/java solutions/CourseConnectWeek1/nbproject/private/
-c solutions/solutions/.dep.inc
-c solutions/solutions/Makefile
+
 *.mk
 *.bash
 *.xml
-c solutions/solutions/nbproject/private/launcher.properties
-/c solutions/Snake/nbproject/private/
-/c solutions/CC/nbproject/private/
-/c solutions/Huffman/nbproject/private/
-/Snake/nbproject/private/
-/c solutions/ProjectEulerQuestion1/nbproject/private/
-*.png
-Snake/src/snake/SnakeClass.java
-Snake/manifest.mf
-Snake/nbproject/genfiles.properties
-Snake/nbproject/project.properties
-Snake/src/snake/Direct.java
-Snake/src/snake/Gui.java
-Snake/src/snake/MyPanel.java
-Snake/src/snake/Snake.java
-Snake/src/snake/SnakeNode.java
-c solutions/ProjectEulerQuestion1/manifest.mf
-c solutions/ProjectEulerQuestion1/nbproject/genfiles.properties
-c solutions/ProjectEulerQuestion1/nbproject/project.properties
-c solutions/ProjectEulerQuestion1/src/projecteulerquestion1/ProjectEulerQuestion1.java
-c solutions/ProjectEulerQuestion1/src/projecteulerquestion1/Question2.java
-java solutions/ProjectEuler/src/Launch/Launch.java
-java solutions/ProjectEuler/tree18.txt
-java solutions/ProjectEuler/tree67.txt
-java solutions/ProjectEuler/triangles102.txt
-java solutions/matrix82.txt
-java solutions/ProjectEuler/base_exp99.txt
-java solutions/ProjectEuler/filename.txt
 *.mf
-java solutions/ProjectEuler/matrix81.txt
-java solutions/ProjectEuler/matrix81small.txt
-java solutions/ProjectEuler/names.txt
 *.properties
-java solutions/ProjectEuler/triangles102Small.txt
+java/ProjectEuler/src/euler/unfinished/
+java/ProjectEuler/src/launch/
+java/ProjectEuler/src/euler/Euler.java

@@ -1,11 +1,14 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler001 {
+public class Euler001 implements Euler {
 
+    @Override
     public String solution() {
         int sum = 0;
         

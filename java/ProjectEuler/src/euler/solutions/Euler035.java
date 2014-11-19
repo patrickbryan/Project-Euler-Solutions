@@ -1,12 +1,15 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.util.ArrayList;
 
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler035 {
+public class Euler035 implements Euler {
+    
+    @Override
     public String solution() {
         ArrayList<Integer> primes = new ArrayList();
         int count = 13;
@@ -29,7 +32,7 @@ public class Euler035 {
                 }
                 if (circular == primes.get(0)) {
                     count+=String.valueOf(circular).length();
-                } else if (!primes.contains(Integer.valueOf(circular))) {
+                } else if (!primes.contains(circular)) {
                     break;
                 } else {
                     primes.remove(Integer.valueOf(circular));

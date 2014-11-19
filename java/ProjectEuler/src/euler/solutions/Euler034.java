@@ -1,13 +1,16 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler034 {
+public class Euler034 implements Euler {
 
     int[] factorials = new int[10]; //0! to 9!
 
+    @Override
     public String solution() {
         int sum = 0;
 
@@ -32,9 +35,6 @@ public class Euler034 {
             sum += factorials[num.charAt(i) - 48];
         }
         
-        if (sum == Integer.parseInt(num))
-            return true;
-        
-        return false;
+        return sum == Integer.parseInt(num);
     }
 }

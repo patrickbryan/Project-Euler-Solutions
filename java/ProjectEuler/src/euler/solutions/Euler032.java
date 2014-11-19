@@ -1,13 +1,15 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.util.ArrayList;
 
 /**
  * Brute force technique
  * @author Patrick Bryan
  */
-public class Euler032 {
+public class Euler032 implements Euler {
     
+    @Override
     public String solution() {
         int sum = 0;
         int product;

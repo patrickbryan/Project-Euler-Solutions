@@ -1,12 +1,15 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.util.GregorianCalendar;
 
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler019 {
+public class Euler019 implements Euler {
+    
+    @Override
     public String solution() {
         GregorianCalendar date = new GregorianCalendar(1901,1,1);
         GregorianCalendar dateFinal = new GregorianCalendar(2000,12,31);

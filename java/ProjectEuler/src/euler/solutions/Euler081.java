@@ -1,5 +1,6 @@
 package euler.solutions;
 
+import euler.Euler;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -8,11 +9,12 @@ import java.util.Scanner;
  *
  * @author Patrick Bryan
  */
-public class Euler081 {
+public class Euler081 implements Euler{
 
     final int MATRIX_SIZE = 80;
 
-    public String solution() throws FileNotFoundException {
+    @Override
+    public String solution() {
         /**
          * 1 2 3
          * 4 5 6
@@ -21,8 +23,14 @@ public class Euler081 {
          * before it is less (9) and add. go to 7, 5, 3. Which is less for each
          * (8+9 or 6+9) and add. Rinse and repeat.
          */
-        File treeFile = new File("matrix81.txt");
-        Scanner sc = new Scanner(treeFile);
+        Scanner sc;
+        try {
+            File treeFile = new File("matrix81.txt");
+            sc = new Scanner(treeFile);
+        } catch (FileNotFoundException e) {
+            return "File not found";
+        }
+        
         int x = 0;
         int[][] matrix = new int[MATRIX_SIZE][MATRIX_SIZE];
         sc.useDelimiter(",|\\n");

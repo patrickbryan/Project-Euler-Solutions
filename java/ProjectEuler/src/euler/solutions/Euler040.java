@@ -1,10 +1,14 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler040 {
+public class Euler040 implements Euler {
+    
+    @Override
     public String solution() {
         int product = 1;
         int pos = 0;

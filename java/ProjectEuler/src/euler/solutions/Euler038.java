@@ -1,11 +1,14 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler038 {
+public class Euler038 implements Euler {
 
+    @Override
     public String solution() {
         StringBuilder setOfNumbers = new StringBuilder();
         int maxPandigital = 0;

@@ -1,11 +1,14 @@
 package euler.solutions;
 
+import euler.Euler;
+
 /**
  *
  * @author Patrick Bryan
  */
-public class Euler024 {
+public class Euler024 implements Euler {
 
+    @Override
     public String solution() {
         String result = "", numbers = "0123456789";
         int cur = 0, temp, count;

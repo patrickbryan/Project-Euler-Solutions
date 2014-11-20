@@ -1,12 +1,43 @@
 package euler;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 
 /**
  *
  * @author Patrick
  */
 public class EulerFunction {
+    
+    /**
+     * Generates all the permutations of a string and returns them
+     * in an ArrayList
+     * @param str string to run permutations on
+     * @return list of all permutations of str
+     */
+    public static ArrayList<String> permutation(String str) {
+        ArrayList<String> result = new ArrayList<>();
+        permutation("", str, result);
+        return result;
+    }
+
+    /**
+     * Generates all the permutations of a string and returns them
+     * in an ArrayList
+     * @param prefix default should be ""
+     * @param str string to run permutations on
+     * @param result list of all permutations of str
+     */
+    private static void permutation(String prefix, String str, ArrayList<String> result) {
+        int n = str.length();
+        if (n == 0) {
+            result.add(prefix);
+        } else {
+            for (int i = 0; i < n; i++) {
+                permutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i + 1, n), result);
+            }
+        }
+    }
     
     /**
      * Finds the lowest form of the denominator of a fraction

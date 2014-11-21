@@ -154,19 +154,25 @@ public class EulerFunction {
     }
     
     /**
-     * Checks if a number is n-pandigital. n is how many digits s contains
+     * Checks if a number is n-pandigital. n is how many digits s contains.
+     * Only up to 10-pandigital (0 to 9).
+     * n-pandigitals where n = 1..9, checks for numbers 1 to n while
+     * 10-padigital checks for numbers 0 to 9
      * @param s number to be checked
      * @return if number s is n-pandigital where n is s.length()
      */
     public static boolean isNPandigital(String s) {
-        if (s.length() > 9)
+        if (s.length() > 10)
             return false;
         
         boolean found[] = new boolean[s.length()];
         
         for (int i = 0; i < s.length(); i++) {
             int num = Character.getNumericValue(s.charAt(i));
-            if (num > s.length() || num <= 0 || found[num-1])
+            //So 0's are in the 10th array position or found[9]
+            if (num == 0)
+                num = 10;
+            if (num > s.length() || found[num-1])
                 return false;
             found[num-1] = true;
         }
